@@ -1,0 +1,19 @@
+{
+  "name"        : "synflux",
+  "version"     : "1.0.0",
+  "description" : "My own personal flux implementation",
+  "main"        : "index.js",
+  "repository" : {
+    "type" : "git",
+    "url"  : "https://github.com/paulstatezny/synflux.git"
+  },
+  "author"  : "Paul Statezny",
+  "license" : "MIT",
+  "bugs"    : {
+    "url" : "https://github.com/paulstatezny/synflux/issues"
+  },
+  "homepage"     : "https://github.com/paulstatezny/synflux",
+  "dependencies" : {
+    "fluxxor" : "^1.5.2"
+  }
+}
