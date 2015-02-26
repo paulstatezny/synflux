@@ -54,7 +54,7 @@ var SomeReactComponent = React.createClass({
     getStateFromFlux : function()
     {
         return {
-            data : this.getFlux().store('Data').getData();
+            data : this.getFlux().store('Data').getData()
         };
     },
 
