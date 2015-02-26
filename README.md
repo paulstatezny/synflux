@@ -8,6 +8,7 @@ Like this:
 ```JS
 var Synflux = require('synflux');
 
+// Make a store
 var store = Synflux.createStore({
     initialize : function()
     {
@@ -27,6 +28,7 @@ var store = Synflux.createStore({
     }
 });
 
+// Make an action creator
 var action = {
     setData : function(data)
     {
@@ -34,10 +36,14 @@ var action = {
     }
 };
 
+// Register with the flux object
 var flux = Synflux.Flux({Data : store}, {Data : action});
+```
 
+And then, here's how you'd use it in your React components:
+
+```JSX
 var SomeReactComponent = React.createClass({
-
     mixins : [
         SynFlux.StoreWatchMixin('Data'),
         SynFlux.FluxMixin
@@ -62,3 +68,4 @@ var SomeReactComponent = React.createClass({
         // Render stuff
     }
 });
+```
