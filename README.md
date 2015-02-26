@@ -42,7 +42,7 @@ var flux = Synflux.Flux({Data : store}, {Data : action});
 
 And then, here's how you'd use it in your React components:
 
-```JSX
+```JS
 var SomeReactComponent = React.createClass({
     mixins : [
         SynFlux.StoreWatchMixin('Data'),
